@@ -63,6 +63,17 @@
     [self.validate_btn addTarget:self action:@selector(clickValidateBtnAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+/**
+ 弹窗提示
+ */
+- (void)presentAlertControllerWithPrompt:(NSString *) prompt
+{
+    UIAlertController *alert_controller = [UIAlertController alertControllerWithTitle:@"提示" message:prompt preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok_action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alert_controller addAction:ok_action];
+    [self presentViewController:alert_controller animated:YES completion:nil];
+}
+
 #pragma mark - UITextFieldDelegate代理方法
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
@@ -71,11 +82,7 @@
         [(DOCustomTextField *)textField validate];
     }
     
-    
-    UIAlertController *alert_controller = [UIAlertController alertControllerWithTitle:@"提示" message:[[(DOCustomTextField *)textField validate_model] attribute_result] preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *ok_action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-    [alert_controller addAction:ok_action];
-    [self presentViewController:alert_controller animated:YES completion:nil];
+    [self presentAlertControllerWithPrompt:[[(DOCustomTextField *)textField validate_model] attribute_result]];
 }
 
 #pragma mark - Event Cycle
