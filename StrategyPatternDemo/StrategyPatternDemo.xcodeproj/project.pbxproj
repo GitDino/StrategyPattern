@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0103083C20789C250068D596 /* DOCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103083B20789C250068D596 /* DOCustomTextField.m */; };
+		0103084020789FA00068D596 /* DOBaseValidateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103083F20789FA00068D596 /* DOBaseValidateModel.m */; };
+		0103084320789FD80068D596 /* DOLetterValidateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103084220789FD80068D596 /* DOLetterValidateModel.m */; };
+		0103084620789FE90068D596 /* DONumberValidateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103084520789FE90068D596 /* DONumberValidateModel.m */; };
 		01642874207896E800371BB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01642873207896E800371BB5 /* AppDelegate.m */; };
 		0164287C207896E900371BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0164287B207896E900371BB5 /* Assets.xcassets */; };
 		0164287F207896E900371BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0164287D207896E900371BB5 /* LaunchScreen.storyboard */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0103083A20789C250068D596 /* DOCustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCustomTextField.h; sourceTree = "<group>"; };
+		0103083B20789C250068D596 /* DOCustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCustomTextField.m; sourceTree = "<group>"; };
+		0103083E20789FA00068D596 /* DOBaseValidateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBaseValidateModel.h; sourceTree = "<group>"; };
+		0103083F20789FA00068D596 /* DOBaseValidateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBaseValidateModel.m; sourceTree = "<group>"; };
+		0103084120789FD80068D596 /* DOLetterValidateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOLetterValidateModel.h; sourceTree = "<group>"; };
+		0103084220789FD80068D596 /* DOLetterValidateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOLetterValidateModel.m; sourceTree = "<group>"; };
+		0103084420789FE90068D596 /* DONumberValidateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DONumberValidateModel.h; sourceTree = "<group>"; };
+		0103084520789FE90068D596 /* DONumberValidateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DONumberValidateModel.m; sourceTree = "<group>"; };
 		0164286F207896E800371BB5 /* StrategyPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrategyPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01642872207896E800371BB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01642873207896E800371BB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0103083920789BDA0068D596 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0103083A20789C250068D596 /* DOCustomTextField.h */,
+				0103083B20789C250068D596 /* DOCustomTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0103083D20789F6E0068D596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0103083E20789FA00068D596 /* DOBaseValidateModel.h */,
+				0103083F20789FA00068D596 /* DOBaseValidateModel.m */,
+				0103084120789FD80068D596 /* DOLetterValidateModel.h */,
+				0103084220789FD80068D596 /* DOLetterValidateModel.m */,
+				0103084420789FE90068D596 /* DONumberValidateModel.h */,
+				0103084520789FE90068D596 /* DONumberValidateModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		01642866207896E800371BB5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +133,8 @@
 		01642871207896E800371BB5 /* StrategyPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0103083D20789F6E0068D596 /* Model */,
+				0103083920789BDA0068D596 /* View */,
 				016428A62078974300371BB5 /* Controller */,
 				016428A52078972200371BB5 /* Bases */,
 				016428A42078970800371BB5 /* Resources */,
@@ -283,7 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0103084320789FD80068D596 /* DOLetterValidateModel.m in Sources */,
+				0103084020789FA00068D596 /* DOBaseValidateModel.m in Sources */,
 				016428A92078979E00371BB5 /* DORootVC.m in Sources */,
+				0103084620789FE90068D596 /* DONumberValidateModel.m in Sources */,
+				0103083C20789C250068D596 /* DOCustomTextField.m in Sources */,
 				01642882207896E900371BB5 /* main.m in Sources */,
 				01642874207896E800371BB5 /* AppDelegate.m in Sources */,
 			);
